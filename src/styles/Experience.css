@@ -1,0 +1,15 @@
+:root {
+    --color-primary: #191d2b;
+    --color-secondary: rgb(234, 155, 51);
+    --color-grey-4: #454e60
+}
+
+.experience {
+    height: 100vh;
+    color: white;
+    background-color: rgb(238, 151, 45);
+}
+
+.title {
+    font-size: 50px;
+}
