@@ -5,11 +5,52 @@
 }
 
 .projects {
-    height: 100vh;
-    color: white;
+    height: 110vh;
+    color: lightgray;
     background-color: var(--color-primary);
 }
 
 .title {
     font-size: 50px;
+}
+
+.project-left-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);
+    transition: .7s all;
+}
+
+.project-right-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(20%);
+    transition: .7s all;
+}
+
+.project-show {
+    opacity: 1;
+    transition: .7s all;
+    transform: translateX(0%);
+}
+
+.project-info {
+    width: 60%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-photo {
+    height: 70%;
+    width: 70%;;    
+    border-radius: 10px;        
+    box-shadow: 0 3px 15px rgba(0,0,0,.3);
+
 }

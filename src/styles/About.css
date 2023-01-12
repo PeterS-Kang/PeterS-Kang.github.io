@@ -5,9 +5,21 @@
 }
 
 .about-me {
-    height: 100vh;
+    height: 110vh;
     color: white;
-    background-color: slategray;
+    background-color: var(--color-primary);
+    transition: ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: .4s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transition: .4s ease-in-out;
 }
 
 .title {
@@ -37,15 +49,15 @@
     padding-left: 25px;
     background-color: inherit;
     color: inherit;
-    border: 3px solid white;
+    border: 3px solid var(--color-secondary);
     font-size: 20px;
     font-weight: bold;
     transition-duration: .4s;
 }
 
 .button-hover:hover{
-    background-color: white;
-    color: slategray;
+    background-color: var(--color-secondary);
+    color: white;
     transition: 0.4s ease-in-out;
     padding: 10px;
     padding-left: 20px;
@@ -53,12 +65,10 @@
     
 }
 
-
-
 .photo {
     height: 100%;
     width: 60%;;
-    border: 1px solid var(--color-grey-4);
+
     border-radius: 10px;
     box-shadow: 0 3px 15px rgba(0,0,0,.3);
 }

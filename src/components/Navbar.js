@@ -10,23 +10,35 @@ import { Link } from 'react-router-dom';
 
 
 function Navbar () {
-    const [index, setIndex] = useState(-1)
+    const [index, setIndex] = useState()
 
     const [scrollPosition, setScrollPosition] = useState(0)
 
+    
+    const getScrollPercent = () => {
+        var h = document.documentElement, 
+            b = document.body,
+            st = 'scrollTop',
+            sh = 'scrollHeight';
+        return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+    }
+
+
     const handleNavbar = () => {
-        const position = window.pageYOffset
+        const position = getScrollPercent()
         setScrollPosition(position)
-        if (position > 3500) {
-            setIndex(4)
-        } else if (position > 2600)  {
-            setIndex(3)
-        } else if (position > 1700) {
-            setIndex(2)
-        } else if (position > 900) {
-            setIndex(1) 
-        } else if (position < 900) {
+        console.log(position)
+
+        if (position < 15) {
             setIndex(0)
+        } else if (position < 40) {
+            setIndex(1)
+        } else if (position < 65) {
+            setIndex(2)
+        } else if (position < 90) {
+            setIndex(3)
+        } else {
+            setIndex(4)
         }
     }
 

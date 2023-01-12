@@ -5,9 +5,9 @@
 }
 
 .experience {
-    height: 100vh;
+    height: 110vh;
     color: white;
-    background-color: rgb(238, 151, 45);
+    background-color: var(--color-primary);
 }
 
 .title {

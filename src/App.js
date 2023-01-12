@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Pages from './pages/Pages';
 import { useEffect, useRef } from 'react';
+import Resume from './pages/Resume';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/#projects' element={<Projects/>}></Route>
           <Route path='/#experience' element={<Experience/>}></Route>
           <Route path='/#contact' element={<Contact/>}></Route>
+          <Route path='/resume' element={<Resume/>}></Route>
         </Routes>
       </Router>
     </div>

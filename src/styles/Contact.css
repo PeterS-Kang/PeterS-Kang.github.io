@@ -6,10 +6,64 @@
 
 .contact {
     height: 100vh;
-    color: white;
+    color: lightgray;
     background-color: var(--color-primary);
 }
 
 .title {
     font-size: 50px;
+}
+
+.form-container {
+    margin-top: 8%;
+    padding: 5%;
+    margin-right: 25%;
+    margin-left: 5%;
+    background-color: var(--color-grey-4);
+    border-radius: 10px;
+}
+
+.form-container-show {
+    opacity: 1;
+    transition: .7s all;
+    transform: translateX(0%);
+}
+
+.form-container-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(20%);
+    transition: .7s all;
+}
+
+
+.iconbutton {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    border: transparent;
+    background-color: transparent;
+}
+
+.icon {
+    cursor: pointer;
+    border: transparent;    
+    color:white;
+}
+
+.info-show {
+    flex-direction: column;
+    margin-top: 10%;;
+    opacity: 1;
+    transition: .7s all;
+    transform: translateX(0%);
+}
+
+.info-hidden-left {
+    flex-direction: column;
+    margin-top: 10%;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);
+    transition: .7s all;
 }
