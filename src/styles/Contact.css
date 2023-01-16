@@ -51,6 +51,11 @@
     color:white;
 }
 
+.iconbutton :hover {
+    transition: all 0.4s;
+    color: orange;
+}
+
 .info-show {
     flex-direction: column;
     margin-top: 10%;;

@@ -36,10 +36,17 @@ function Experience() {
   return (
     <div className='experience' id='experience'>
       <h1 className={index === 3 ? 'title show' : 'title hidden'}>
-        Experience
+        Academics and Activities
       </h1>
-      <h3 className={index === 3 ? 'show' : 'hidden'}>
-        Upcoming
+      <h3 className={index === 3 ? 'show content' : 'hidden content'}>
+        <div>
+          <h2>Education</h2>
+          <p>GPA: 4.0</p>
+        </div>
+        <div>
+          <h2>Activities</h2>
+          <p></p>
+        </div>
       </h3>
     </div>
   )

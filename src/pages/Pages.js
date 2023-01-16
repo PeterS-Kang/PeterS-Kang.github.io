@@ -12,7 +12,6 @@ function Pages() {
         <Home/>
         <Portfolio/>
         <Projects/>
-        <Experience/>
         <Contact/>
     </div>
 

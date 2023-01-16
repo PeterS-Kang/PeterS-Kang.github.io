@@ -37,7 +37,8 @@ function MessageForm() {
 
   return (
     <div>
-        <h3 className='text'>Contact Me!</h3>
+        <h2 className='text'>Contact Me!</h2>
+        <h1 className={complete === false ? 'true text' : 'false text submitted'}>Submitted!</h1>
     <form onSubmit={onSubmit} className={complete === false ? 'false' : 'true'}>
         <input
             type={'text'}
@@ -62,6 +63,7 @@ function MessageForm() {
         />
         <button className={enabled === true ? 'form-button-enabled' : 'form-button-disabled'} type='submit' disabled={!enabled}>Submit</button>
     </form>
+    
     </div>
   )
 }

@@ -9,7 +9,6 @@ input {
 form {
     display: flex;
     flex-direction: column;
-    padding: 1 rem;
 }
 
 .form-button-enabled {
@@ -53,4 +52,9 @@ form {
 
 .text {
     color: white;
+}
+
+
+.submitted {
+    transform: translateY(8rem);
 }

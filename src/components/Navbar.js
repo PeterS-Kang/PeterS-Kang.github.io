@@ -29,16 +29,14 @@ function Navbar () {
         setScrollPosition(position)
         console.log(position)
 
-        if (position < 15) {
+        if (position < 25) {
             setIndex(0)
-        } else if (position < 40) {
+        } else if (position < 50) {
             setIndex(1)
-        } else if (position < 65) {
+        } else if (position < 75) {
             setIndex(2)
-        } else if (position < 90) {
-            setIndex(3)
         } else {
-            setIndex(4)
+            setIndex(3)
         }
     }
 
@@ -68,13 +66,8 @@ function Navbar () {
                         <EmojiObjectsIcon/>
                     </button>
                 </HashLink>
-                <HashLink to="/#experience">
-                    <button className={index === 3 ? 'button active' : 'button'}>
-                        <WorkIcon/>
-                    </button>
-                </HashLink>
                 <HashLink to="/#contact">
-                    <button className={index === 4 ? 'button active' : 'button'}> 
+                    <button className={index === 3 ? 'button active' : 'button'}> 
                         <EmailIcon/>
                     </button>
                 </HashLink>

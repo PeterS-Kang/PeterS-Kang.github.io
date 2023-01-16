@@ -45,11 +45,11 @@ function Portfolio() {
       <h1 className={index === 1 ? 'title show' : 'title hidden'}>
         ABOUT ME
       </h1>
-      <div className={index === 1 ? 'content show' : 'content hidden'}>
+      <div className='content'>
         <div className='imagebox'>
-          <img src={photo} className='photo'></img>
+          <img src={photo} className={index === 1 ? 'photo-show' : 'photo-hidden'}></img>
         </div>
-        <div className='description'>
+        <div className={index === 1 ? 'info-show-about' : 'info-hidden'}>
           <p>
             I am an undergraduate student studying Computer Science. I am an eager learner who enjoys learning new 
             technologies and creating expansive projects. My expected graduation date is May/December 2025.

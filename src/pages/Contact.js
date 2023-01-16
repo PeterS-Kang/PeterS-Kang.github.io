@@ -31,10 +31,10 @@ function Contact() {
       const position = getScrollPercent()
       setScrollPosition(position)
 
-      if (position < 90) {
-        setIndex(3)
+      if (position < 75) {
+        setIndex(2)
       } else {
-        setIndex(4)
+        setIndex(3)
       }
       
   }
@@ -46,11 +46,11 @@ function Contact() {
   return (
     <div className='contact' id='contact'>
       <div></div>
-      <h1 className={index === 4 ? 'title show' : 'title hidden'}>
+      <h1 className={index === 3 ? 'title show' : 'title hidden'}>
         Say Hi
       </h1>
       <div className='content'>
-        <div className={index === 4 ? 'info-show' : 'info-hidden-left'}>
+        <div className={index === 3 ? 'info-show' : 'info-hidden-left'}>
           <div>
             <h3>Phone</h3>
             <p>503-746-1730</p>
@@ -68,7 +68,7 @@ function Contact() {
             </button>
           </div>
         </div>
-        <div className={index === 4 ? 'form-container form-container-show' : 'form-container form-container-hidden'}>
+        <div className={index === 3 ? 'form-container form-container-show' : 'form-container form-container-hidden'}>
           <MessageForm/>
         </div>
       </div>
