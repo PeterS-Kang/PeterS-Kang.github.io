@@ -34,3 +34,33 @@
     color: lightgrey;
     white-space: pre-wrap;
 }
+
+@media only screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 15%;
+        margin-right: 10%;
+        align-content: center;
+        height: 100vh;
+    }
+    
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        color: lightgrey    ;
+        font-size: 50px;
+
+    }
+
+    .name {
+        font-size: 80px;
+    }
+    
+    .typewriter {
+        font-size: 50px;
+
+    }
+}

@@ -45,7 +45,7 @@ function Projects() {
         <div className={index === 2 ? 'project-show' : 'project-left-hidden'}>
           <div className='project-content'>
             <h2>BoilerHunt</h2>
-            <img className='boilerhunt-photo' src={Boilerhunt}></img>
+            <img className='project-photo' src={Boilerhunt}></img>
             <p className='project-info'>
               A mobile application created with React Native, Express, NodeJs, and MongoDB. <br/> <br/>
               Utilizes location tracking and an interactive map to serve as a guide to Purdue's vast campus. <br/> <br/>

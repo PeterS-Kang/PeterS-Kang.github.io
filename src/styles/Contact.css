@@ -72,3 +72,42 @@
     transform: translateX(-20%);
     transition: .7s all;
 }
+
+@media only screen and (max-width: 768px) {
+
+.contact {        
+    height: 120vh;
+    color: lightgray;
+    background-color: var(--color-primary);
+}
+.info-show {
+    flex-direction: column;
+    margin-top: 10%;;
+    opacity: 1;
+    transition: .7s all;
+    transform: translateX(0%);
+}
+
+.info-hidden-left {
+    flex-direction: column;
+    margin-top: 10%;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);
+    transition: .7s all;
+}
+
+.form-container-show {
+    opacity: 1;
+    transition: .7s all;
+    transform: translateX(10%);
+}
+
+.form-container-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(20%);
+    transition: .7s all;
+}
+
+}
